@@ -1,5 +1,4 @@
 import React from 'react';
-import testImg from '../img/empty_card.png'
 
 export const currencyListTest = [ /* Тестовый набор данных для раздела "Валюты" */
   {name: 'USD MOEX', price: '63,52', change: '+0,09'},
