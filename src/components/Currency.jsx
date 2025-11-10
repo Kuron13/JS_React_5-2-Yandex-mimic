@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const currencyListTest = [ /* Тестовый набор данных для раздела "Валюты" */
+const currencyListTest = [ /* Тестовый набор данных для раздела "Валюты" */
   {name: 'USD MOEX', price: '63,52', change: '+0,09'},
   {name: 'EUR MOEX', price: '70,86', change: '+0,14'},
   {name: 'Нефть', price: '64,90', change: '+1,63%'}
 ]
 
-export function Currency({ currencyList }) {
+export function Currency({ currencyList = currencyListTest }) {
   /* Формирование раздела "Валюты", собирая список строк из данных */
 
   return (
