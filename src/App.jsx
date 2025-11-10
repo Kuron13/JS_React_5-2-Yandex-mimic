@@ -22,7 +22,7 @@ function App() {
         <div className='main-block'>
           <News />
           <Currency />
-          /* <Currency currencyList={currencyListTest} /> */
+          {/* <Currency currencyList={currencyListTest} /> */}
         </div>
         
         <div className='add-block'>
@@ -34,7 +34,7 @@ function App() {
       <Find />
       <Adversting img={testImg} url={'#'} />
       <Other />
-      /* <Other othersList={otherListTest} /> */
+      {/* <Other othersList={otherListTest} /> */}
     </div>
   )
 }
