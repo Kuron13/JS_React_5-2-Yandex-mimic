@@ -100,7 +100,7 @@ export function Other({ othersList }) {
 
 
 
-export function OtherItem({ title, addTitle = null, img = null, content = [] , url = '#'}) {
+function OtherItem({ title, addTitle = null, img = null, content = [] , url = '#'}) {
   /* Формирование разметки каждой карточки из раздела "Другое" */
   return (
     <a href={url} className='other-item'>
@@ -115,7 +115,7 @@ export function OtherItem({ title, addTitle = null, img = null, content = [] , u
 }
 
 
-export function ListItems({ img, items }) {
+function ListItems({ img, items }) {
   /* Формирование контента из списка внутри каждой карточки из раздела "Другое" */
 
   return (
@@ -127,7 +127,7 @@ export function ListItems({ img, items }) {
 }
 
 
-export function OtherItemContent({ text = '', addText = '' }) {
+function OtherItemContent({ text = '', addText = '' }) {
   /* Форматирование каждой строки контента внутри карточки из раздела "Другое" */
   return (
     <div className='other-content-item'>
