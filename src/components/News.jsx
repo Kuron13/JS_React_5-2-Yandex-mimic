@@ -4,9 +4,9 @@ import { useState } from 'react';
 import testImg from '../img/empty_card.png'
 
  /* Тестовый набор тегов для раздела "Новости" */
-export const tagsListTest = ['Сейчас в СМИ', 'в Германии', 'Рекомендуем']
+const tagsListTest = ['Сейчас в СМИ', 'в Германии', 'Рекомендуем']
 
-export const newsListTest = [ /* Тестовый набор новостей для раздела "Новости" */
+const newsListTest = [ /* Тестовый набор новостей для раздела "Новости" */
   {img: testImg, text: 'Текст новости 1', url: '#', tag: 'Сейчас в СМИ'},
   {img: testImg, text: 'Текст новости 2', url: '#', tag: 'Сейчас в СМИ'},
   {img: testImg, text: 'Текст новости 3', url: '#', tag: 'Сейчас в СМИ'},
@@ -44,7 +44,7 @@ export function News() {
   )
 }
 
-export function NewsToolbar({ tagsList, selected, setSelected, filtration }) {
+function NewsToolbar({ tagsList, selected, setSelected, filtration }) {
   /* Тулбар тегов для раздела 'Новости' */
 
   const selectTag = (e) => {
@@ -60,7 +60,7 @@ export function NewsToolbar({ tagsList, selected, setSelected, filtration }) {
   );
 }
 
-export function NewsList({ newsList }) {
+function NewsList({ newsList }) {
   /* Формирование списка новостей */
 
   return (
@@ -71,7 +71,7 @@ export function NewsList({ newsList }) {
 }
 
 
-export function NewsItem({ img = null, text = 'Текст новости', url = '#' }) {
+function NewsItem({ img = null, text = 'Текст новости', url = '#' }) {
   /* Форматирование каждой строки новости */
   return (
     <a href={url} className='news-item'>
