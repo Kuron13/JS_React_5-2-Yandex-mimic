@@ -2,7 +2,7 @@ import React from 'react';
 
 import testImg from '../img/empty_card.png'
 
-export const otherListTest = [   /* Тестовый набор данных для раздела "Другое" */
+const otherListTest = [   /* Тестовый набор данных для раздела "Другое" */
   {
     title: 'Погода',
     addTitle: null,
@@ -87,7 +87,7 @@ export const otherListTest = [   /* Тестовый набор данных д�
 
 
 
-export function Other({ othersList }) {
+export function Other({ othersList = otherListTest }) {
   /* Формирование раздела "Другое", собирая список карточек из данных */
 
   return (
