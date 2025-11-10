@@ -1,7 +1,7 @@
 import React from 'react';
 
  /* Тестовый набор типов для раздела "Поиск" */
-export const typesListTest = [
+const typesListTest = [
   {name: 'Видео', url: '#'},
   {name: 'Картинки', url: '#'},
   {name: 'Новости', url: '#'},
