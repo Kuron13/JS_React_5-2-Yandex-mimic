@@ -18,7 +18,7 @@ export function Currency({ currencyList }) {
 }
 
 
-export function CurrencyItem({ name = '', price = '', change = '' }) {
+function CurrencyItem({ name = '', price = '', change = '' }) {
   /* Форматирование каждой строки из раздела "Валюты" */
   return (
     <div className='currency-item'>
