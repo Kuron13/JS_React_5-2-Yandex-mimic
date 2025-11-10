@@ -2,17 +2,12 @@ import './App.css'
 import React from 'react';
 
 import { News } from './components/News.jsx'
-
-import { currencyListTest } from './components/Currency.jsx'
+/* import { currencyListTest } from './components/Currency.jsx' */
 import { Currency } from './components/Currency.jsx'
-
 import { AddNews } from './components/AddNews.jsx'
-
-import { otherListTest } from './components/Other.jsx'
+/* import { otherListTest } from './components/Other.jsx' */
 import { Other } from './components/Other.jsx'
-
 import { Find } from './components/Find.jsx'
-
 import { Adversting } from './components/Adversting.jsx'
 
 import testImg from './img/empty_card.png'
@@ -26,7 +21,8 @@ function App() {
 
         <div className='main-block'>
           <News />
-          <Currency currencyList={currencyListTest} />
+          <Currency />
+          /* <Currency currencyList={currencyListTest} /> */
         </div>
         
         <div className='add-block'>
@@ -37,7 +33,8 @@ function App() {
       
       <Find />
       <Adversting img={testImg} url={'#'} />
-      <Other othersList={otherListTest} />
+      <Other />
+      /* <Other othersList={otherListTest} /> */
     </div>
   )
 }
