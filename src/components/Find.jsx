@@ -30,7 +30,7 @@ export function Find() {
   )
 }
 
-export function FindToolbar({ typesList }) {
+function FindToolbar({ typesList }) {
   /* Тулбар типов для раздела 'Поиск' */
 
   return (
@@ -40,7 +40,7 @@ export function FindToolbar({ typesList }) {
   );
 }
 
-export function SearchForm() {
+function SearchForm() {
   /* Строка ввода для раздела 'Поиск' */
 
   return (
